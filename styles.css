@@ -9,6 +9,7 @@
     --md: 16px;
     --lg: 18px;
     --height: 52px;
+    --animate-delay: 0.5s;
 }
 
 * {
@@ -114,6 +115,50 @@ figure {
 
 img {
     width: 100%;
+}
+
+
+/*HERO*/
+
+.hero {
+    height: 100px;
+    margin: 0;
+    background-position: 50% 50%;
+    background-size: 100%;
+    object-fit: cover;
+    background-image: url("https://images.pexels.com/photos/7336491/pexels-photo-7336491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.hero img {
+    border-radius: 16px;
+    width: 70px;
+    height: 70px;
+}
+
+
+/*BACK*/
+
+.back {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    position: fixed;
+    bottom: 8px;
+    background-color: var(--second-color-2);
+    right: 8px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back i {
+    color: var(--first-color);
+    font-size: var(--md);
+}
+
+.back:hover {
+    background-color: var(--second-color);
 }
 
 
